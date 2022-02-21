@@ -144,6 +144,10 @@
         img{
             height: 100%;
         }
+        @media (max-width: 768px) {
+            flex: 100%;
+            max-width: 100%;
+        }
     }
 }
 .section-padding{
