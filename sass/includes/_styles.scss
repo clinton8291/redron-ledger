@@ -196,4 +196,13 @@ p{
             height: 50vh;
         }
     }
+/** Posts **/
+#post .hero{
+    height: 30vh;
+    @media (max-width: 768px) {
+        height: 50vh;
+    }
+}
+.post{
+    padding: 50px 30px;
 }
