@@ -245,7 +245,7 @@
                             iusto cupiditate odio maxime adipisci cumque eligendi nemo
                             dolore id itaque?
                         </p>
-                        <a href="#" class="btn btn-outline">
+                        <a href="blogs.html" class="btn btn-outline">
                             <i class="fas fa-chevron"></i>
                             Read More
                         </a>
@@ -323,7 +323,7 @@
     
     <script src="js/lightbox.min.js"></script>
     <script>
-        //Fixed Header
+        //Fixed Header - Bounce Effect
         const navbar = document.querySelector('#navbar');
         let scrolled = false;
         window.onscroll = function(){
@@ -341,6 +341,17 @@
                 scrolled = false;
             }
         }
+
+      // Smooth Scrolling
+      $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top - 100,
+            }, 800);
+        }
+      });
     </script>
 </body>
 </html>

@@ -18,6 +18,14 @@
         background-color: $secondary-color;
         color: #fff;
     }
+    &-light{
+        background-color: #fff;
+        color: #333;
+    }
+    &-dark{
+        background-color: #333;
+        color: #fff;
+    }
 }
 .btn{
     display: inline-block;
@@ -135,6 +143,10 @@
         padding: 4px;
         img{
             height: 100%;
+        }
+        @media (max-width: 768px) {
+            flex: 100%;
+            max-width: 100%;
         }
     }
 }
